@@ -1,4 +1,4 @@
-# usb-repair-launcher
+# Windows Repair Launcher
 set of PowerShell scripts created for the purposes of simply automating common computer repair/modification tasks, while avoiding using 3rd party applications (for use cases involving Group Policy or Application Whitelisting). As a result, none of this is particularly special or original code, and is put in this repo mostly for archive and demonstration purposes.
 
 ---

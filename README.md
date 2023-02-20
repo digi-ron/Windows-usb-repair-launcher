@@ -6,7 +6,7 @@ set of PowerShell scripts created for the purposes of simply automating common c
 
 ---
 
-all files in the Scripts folder are read for acceptable file extensions (bat, reg and ps1) and listed for the technician to choose from, using a numbering system (0-n). once selected the scripts are run
+all files in the Scripts folder are read for acceptable file extensions (bat, reg and ps1) and listed for the technician to choose from, using a numbering system (0-n). once selected the scripts are run accorsing to those extensions (ps1 files are run with powershell, bat files are run with cmd, reg files are imported using registry commands)
 
 ## Notes:
 

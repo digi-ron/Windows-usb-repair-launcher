@@ -66,7 +66,7 @@ while($stringinput -ne "0")
             $numberinput = [int]$stringinput | Out-Null
 
             # dunno why but the comparator seems to require the STRING value rather than the int, I'm pretty sure I'm not doing this wrong, it must be PS thangs
-            if($stringinput -le $fileiterator -and $stringinput -gt "0")
+            if($numberinput -le $fileiterator -and $numberinput -gt -1)
             {
                 Write-Output "Input accepted..."
                 $validinput = $true

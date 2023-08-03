@@ -30,7 +30,7 @@ $folderAdditional = '" \"%V'
 $fileAdditional = '\" \"%1'
 $menuOutputMode = @"
 OPTIONS:
-1- Background
+1 - Background
 2 - Selected Folder
 3 - all files (*)
 "@

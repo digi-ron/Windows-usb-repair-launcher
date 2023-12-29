@@ -6,7 +6,7 @@ set of PowerShell scripts created for the purposes of simply automating common c
 
 ---
 
-all files in the Scripts folder are read for acceptable file extensions (bat, reg and ps1) and listed for the technician to choose from, using a numbering system (0-n). once selected the scripts are run accorsing to those extensions (ps1 files are run with powershell, bat files are run with cmd, reg files are imported using registry commands)
+all files in the Scripts folder are read for acceptable file extensions (bat, reg and ps1) and listed for the technician to choose from, using a numbering system (0-n). once selected the scripts are run according to those extensions (ps1 files are run with powershell, bat files are run with cmd, reg files are imported using registry commands)
 
 ## Notes:
 
@@ -24,4 +24,4 @@ _- The Common Repairs Script will also dump computer information into the DumpOu
 | Launcher.ps1 | Main launcher application, technically speaking this could be launched directly to the same effect as running the batch file in the directory above, however batch was decided as the "main launcher" as it can be double-clicked as default behaviour in Windows, and it can change the powershell execution policy before launch to ensure it runs. |
 | Remove New Context Item.ps1 | Removes any input file extension registry key according to the input file extension (with or without a .). This is the script to revert any changes made by the Create New Context Item script |
 | Reset Execution-Policy.bat | resets the powershell execution policy to default behavior manually, if this is run no more scripts will run asn the launcher should be exited immediately |
-| Windows Search Disable W10_22H2 | A simple registry file to override cortana functionality to local search only, tested to work on Windows 10, 22H2
+| Windows Search Disable W10_22H2.reg | A simple registry file to override cortana functionality to local search only, tested to work on Windows 10, 22H2

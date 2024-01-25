@@ -13,14 +13,13 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 
 # set variables for file output
 $fileoutPath = Split-Path $PSScriptRoot -Parent
-$fileoutPath += "DumpOutputs"
+$fileoutPath += "/DumpOutputs"
 mkdir $fileoutPath -Force | Out-Null
 $computerinformation = Get-ComputerInfo
-$PCName = $computerinformation.CsName
+$PCName = $computerinformation.CsUserName.Split("\")[1]
 $UserName = $computerinformation.OsRegisteredUser
 $TDStamp = Get-Date -UFormat %y%m%d%H%M%S
-$foldername = "$($fileoutPath)\$($PCName)--$($UserName)--$($TDStamp)"
-$filename = "$foldername.txt"
+$filename = "$($fileoutPath)\$($PCName)--$($UserName)--$($TDStamp).txt"
 # output computer information
 $computerinformation | Select-Object OsName, BiosFirmwareType, CsDomain, CsName, CsProcessors, OsArchitecture, OsRegisteredUser | Out-File -FilePath $filename
 # output GPU configuration

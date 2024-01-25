@@ -2,5 +2,4 @@
 color 0a
 echo Setting Powershell Execution Policy...
 powershell set-executionpolicy restricted -scope currentuser
-pause
 exit

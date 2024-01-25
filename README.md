@@ -24,6 +24,7 @@ _- The Common Repairs Script will also dump computer information into the DumpOu
 | Export Consumer Product Key.ps1 | makes a backup of the registry key responsible for the product key within Windows 10. Exports the .reg file to the DumpOutputs folder |
 | Get List of Installed Applications (Legacy).ps1 | Gets a WMIC queried list of installed applications on the system. *Does not include UWP applications* |
 | Get List of Installed Applications (Modern).ps1 | Gets a PowerShell queried list of UWP applications on the system. *Does not include legacy applications* |
+| Launch All Important Directories.bat | Launches all of the following directories: AppData, ProgramData, Local, LocalLow |
 | Launcher.ps1 | Main launcher application, technically speaking this could be launched directly to the same effect as running the batch file in the directory above, however batch was decided as the "main launcher" as it can be double-clicked as default behaviour in Windows, and it can change the powershell execution policy before launch to ensure it runs. |
 | Remove New Context Item.ps1 | Removes any input file extension registry key according to the input file extension (with or without a .). This is the script to revert any changes made by the Create New Context Item script |
 | Reset Execution-Policy.bat | resets the powershell execution policy to default behavior manually, if this is run no more scripts will run asn the launcher should be exited immediately |

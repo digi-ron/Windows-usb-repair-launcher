@@ -16,8 +16,8 @@ $fileoutPath = Split-Path $PSScriptRoot -Parent
 $fileoutPath += "/DumpOutputs"
 mkdir $fileoutPath -Force | Out-Null
 $computerinformation = Get-ComputerInfo
-$PCName = $computerinformation.CsUserName.Split("\")[1]
-$UserName = $computerinformation.OsRegisteredUser
+$PCName = $computerinformation.CsName
+$UserName = $computerinformation.CsUserName.Split("\")[1]
 $TDStamp = Get-Date -UFormat %y%m%d%H%M%S
 $filename = "$($fileoutPath)\$($PCName)--$($UserName)--$($TDStamp).txt"
 # output computer information

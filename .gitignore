@@ -1,2 +1,2 @@
-USB-ScriptLauncher/DumpOutputs/*.txt
-USB-ScriptLauncher/DumpOutputs/*.reg
+!USB-ScriptLauncher/DumpOutputs/.gitkeep
+USB-ScriptLauncher/DumpOutputs/
